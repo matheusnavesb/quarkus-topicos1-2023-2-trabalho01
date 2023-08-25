@@ -5,8 +5,8 @@
 -- insert into myentity (id, field) values(3, 'field-3');
 -- alter sequence myentity_seq restart with 4;
 
-insert into team(id, nome, cidade) values (1, 'Detroit Pistons', 'Detroit');
-insert into team(id, nome, cidade) values (2, 'Cleveland Cavaliers', 'Cleveland');
-insert into team(id, nome, cidade) values (3, 'Boston Celtics', 'Boston');
-insert into team(id, nome, cidade) values (4, 'Orlando Magic', 'Orlando');
-insert into team(id, nome, cidade) values (5, 'Golden State Warriors', 'Sao Francisco');
+insert into team(nome, cidade) values ('Detroit Pistons', 'Detroit');
+insert into team(nome, cidade) values ('Cleveland Cavaliers', 'Cleveland');
+insert into team(nome, cidade) values ('Boston Celtics', 'Boston');
+insert into team(nome, cidade) values ('Orlando Magic', 'Orlando');
+insert into team(nome, cidade) values ('Golden State Warriors', 'Sao Francisco');

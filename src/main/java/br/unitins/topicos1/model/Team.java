@@ -1,10 +1,17 @@
 package br.unitins.topicos1.model;
 
-import io.quarkus.hibernate.orm.panache.PanacheEntity;
+
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import jakarta.persistence.GenerationType;
 
 @Entity
-public class Team extends PanacheEntity{
+public class Team {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
     private String nome;
     private String cidade;
 
@@ -22,6 +29,14 @@ public class Team extends PanacheEntity{
 
     public void setCidade(String cidade) {
         this.cidade = cidade;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
 }
