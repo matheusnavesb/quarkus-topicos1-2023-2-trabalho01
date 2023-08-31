@@ -37,18 +37,6 @@ public class TeamResource {
         return novoTeam;
     }
 
-    /*/
-    @PUT
-    @Path("/{idUpdate}")
-    @Transactional
-    public Response updateTeam(@PathParam("id") Long id, Team updatedTeam) {
-        Team team = repository.updateTeam(id, updatedTeam);
-        if (team != null) {
-            return Response.ok(team).build(); // Equipe atualizada com sucesso
-        } else {
-            return Response.status(Response.Status.NOT_FOUND).build(); // Equipe não encontrada
-        }
-    }*/
 
     @PUT
     @Path("/update")
